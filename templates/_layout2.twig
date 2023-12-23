@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{craft.app.language}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{siteName}}</title>
+    {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
+
+</head>
+<body>
+    <header>
+<div class="navbar">
+    <div class="logo">WESHMUSIC</div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu">
+        <a href="../index.twig">Home</a>
+        <a href="../Songs.twig">Songs</a>
+        <a href="../Albums.twig">Albums</a>
+        <a href="../Artist.twig">Artists</a>
+    </div>
+</div>
+    </header>
+
+    {% block content %}
+    {# hier komt de content #}
+    {% endblock %}
+   
+    <footer>
+        <p>With a commitment to quality content for the Craft-community.</p>
+        <a href="#">privacy policy</a>
+    </footer>
+
+</body>
+    <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('show');
+    }
+</script>
+</html>
