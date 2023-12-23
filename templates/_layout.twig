@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ siteName }}</title>
+    {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
+    {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
+    {% do craft.app.view.registerCss('
+') %}
+
+
+
+
+    
+</head>
+<body>
+    <header>
+<div class="navbar">
+    <div class="logo">WESHMUSIC</div>
+      <input type="text" class="search" placeholder="Search">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu">
+        <a href="index.twig">Home</a>
+        <a href="Songs.twig">Songs</a>
+        <a href="Albums.twig">Albums</a>
+        <a href="Artist.twig">Artists</a>
+    </div>
+</div>
+    </header>
+
+
+    {% block content %}
+    
+    {% endblock %}
+  {% set entries = craft.entries().section('footer').limit(3) %}
+        
+        {% for entry in entries %}
+    <footer>
+     <p>{{entry.text}}</p>
+    </footer>
+     {% endfor %}
+
+    <script>
+        
+        let searchInput = document.querySelector(".search");
+        let albumTitles = document.querySelectorAll(".Mu h2");
+
+        searchInput.addEventListener("keyup", performSearch);
+
+        function performSearch(e) {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            albumTitles.forEach(title => {
+                const albumTitle = title.textContent.toLowerCase();
+                const albumArticle = title.closest('.Mu');
+
+                if (albumTitle.includes(searchTerm)) {
+                    albumArticle.style.display = "block"; // Show the matching album
+                } else {
+                    albumArticle.style.display = "none"; // Hide non-matching albums
+                }
+            });
+        }
+    </script>
+    <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('show');
+    }
+</script>
+</body>
+</html>
