@@ -1,0 +1,95 @@
+fieldLayouts:
+  0d76d59f-2a77-4915-b5c5-637761564ac9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 87a47ad7-105b-4919-8d22-e1025e3af2f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5311e559-394d-4e8d-94f2-b9da28794560 # Album
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 252761b8-f07e-41c1-a77e-7c479a95bca3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 79353fa9-884d-4ed5-9f3b-6a87701ccee8 # Song
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b43d6435-ddae-448f-8f50-ca74cce6bcec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dbfae31d-6a88-47e4-a7e5-23b4976e1377 # bannerImage
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85bce691-b807-4a88-90a3-1fd3ff981ff1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 521d5b59-7b1c-46e7-93d6-b77f0f8fb7c7 # nationality
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c4893e7-7516-4862-8f7b-998eac614903
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 019c196f-db92-44d1-8163-5db3496354ac
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 319dab0a-9518-4244-9c52-ea4fe4af5e99 # Artist
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

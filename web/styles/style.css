@@ -1,0 +1,225 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "CustomFont";
+}
+                 
+
+
+header {
+    background-color: #002043;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: "CustomFont";
+}
+
+a{
+    text-decoration: none;
+    font-family: "CustomFont";
+}
+.navbar {
+    background-color: #093159;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-family: "CustomFont";
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: block;
+    
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #2c4d8fdb;
+    font-family: "CustomFont";
+}
+
+.menu.show {
+    display: flex;
+    margin-top: 50px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    font-family: "CustomFont";
+}
+
+.musicp {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mus {
+    background-color: #093159;
+    color: #ffff;
+    padding: 2px;
+    text-align: center;
+    font-family: "CustomFont";
+}
+
+.music-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Add padding for better spacing */
+    font-family: "CustomFont";
+}
+.article-details {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* White background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    font-family: "CustomFont";
+}
+
+img{
+    width: 100%;
+    height: 250px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px; /* You can adjust the height based on your preference */
+}
+
+.Mu {
+    width: 100%; /* Adjust the width based on your layout preference */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: white; /* Light gray background color */
+    font-family: "CustomFont";
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "CustomFont";
+}
+
+.Mu p {
+    margin: 5px 0;
+    font-family: "CustomFont";
+}
+
+.Mu img {
+    max-width: 100%;
+    height: auto;
+}
+.musicp{
+    height: 200%;
+}
+/* Basic styling for the search input */
+.search {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "CustomFont";
+    
+}
+
+
+footer {
+    background-color: #002043;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 600px) {
+    .Mu {
+        width: 48%; /* Adjust the width based on your layout preference */
+    }
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        background-color: transparent;
+        
+        width: 40%;
+    }
+
+    .menu a {
+        border-bottom: none;
+    }
+    .search {
+        width: 200px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        
+        
+    }
+}
+
+/* Responsive styles for PCs */
+@media (min-width: 1024px) {
+    .Mu {
+        width: 30%; /* Adjust the width based on your layout preference */
+    }
+    img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .musicp {
+        width: 100%;
+        height: 300px; /* You can adjust the height based on your preference */
+    }
+    .search {
+        width: 200px;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        
+        
+    }
+}
