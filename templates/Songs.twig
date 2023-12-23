@@ -1,0 +1,25 @@
+{% extends "_layout" %}
+{% block content %}
+
+    <section class="music-section">
+        {% set entries = craft.entries().section('song').limit(6) %}
+        {% for entry in entries %} 
+            <article class="Mu">
+                <div>
+                    {% if entry.bannerImage.one() %}
+                        <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                    {% endif %}
+                    <h2><a>{{entry.title}}</a></h2>
+
+
+
+
+                    <a href="{{entry.url}}">Explore</a>
+                </div>
+               
+            </article>
+        {% endfor %}
+    </section>
+{% endblock %}
+
+
