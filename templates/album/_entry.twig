@@ -1,0 +1,18 @@
+{% extends "_layout2" %}
+
+{% block content %}
+    <section class="article-details">
+    <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+        <h2>{{ entry.title }}</h2>
+        <p>Release: {{ entry.release }}</p>
+            {% set songs = craft.entries.section('song').relatedTo(entry).limit(3) %}
+        
+        {% for songsEntry in songs %} 
+            <p>-<a href="{{entry.url}}">{{ songsEntry.title }}</a></p>
+            
+            
+            {# Execute the songs query to get the actual results #}
+            
+        {% endfor %}
+    </section>
+{% endblock %}

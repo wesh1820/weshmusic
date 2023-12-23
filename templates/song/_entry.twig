@@ -1,0 +1,35 @@
+{% extends "_layout2" %}
+
+{% block content %}
+    <section class="article-details">
+            <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+        <h2> {{ entry.title }}</h2>
+        <p>Duration: {{ entry.duration }}</p>
+        <p>Genre: {{ entry.genre }}</p>
+        
+        {% set albums = craft.entries.section('album').relatedTo(entry).limit(3) %}
+        
+        {% for albumEntry in albums %} 
+            <p>Album: {{ albumEntry.title }}</p>
+            
+            {# Execute the songs query to get the actual results #}
+            
+        {% endfor %}
+
+        {% set artists = craft.entries.section('artist').relatedTo(entry).limit(3) %}
+
+        {% for artistEntry in artists %} 
+            <p>Artists: {{ artistEntry.title }}</p>
+            
+            {# Execute the songs query to get the actual results #}
+            
+        {% endfor %}
+
+        {% if entry.videoclip %}
+            {# Assuming entry.videoclip contains a YouTube URL #}
+            <iframe width="560" height="315" src="{{ entry.videoclip }}" frameborder="0" allowfullscreen></iframe>
+        {% endif %}
+        
+        <p>{{ entry.lyrics }}</p>
+    </section>
+{% endblock %}
