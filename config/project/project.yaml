@@ -1,4 +1,4 @@
-dateModified: 1703369122
+dateModified: 1703376205
 email:
   fromEmail: weshmusic@gmail.com
   fromName: weshmusic
@@ -14,9 +14,11 @@ fs:
 meta:
   __names__:
     1c1a5d81-6138-4d0d-90cc-c106b037ca4a: genre # genre
+    3ef8b120-80e0-43f2-a45f-a26d01567382: clickImage # clickImage
     4b5394d6-2042-4375-9992-a2143c41d76c: Album # Album
     7e95d83a-0e02-4c1e-a67f-7e80d418f84c: music-assets # music-assets
     8e1bdad0-912d-4aa1-9af9-8f8767edaa01: Default # Default
+    51c5e28f-16de-46ac-a319-4cf205ceb250: clickImage # clickImage
     69b694fc-5ba6-431c-a5a2-7e26915e67a3: Default # Default
     319dab0a-9518-4244-9c52-ea4fe4af5e99: Artist # Artist
     333e84b6-3acc-4085-9523-8d4201b1e272: Artist # Artist

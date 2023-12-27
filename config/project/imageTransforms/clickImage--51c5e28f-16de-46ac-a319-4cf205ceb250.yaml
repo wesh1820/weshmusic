@@ -1,11 +1,11 @@
 fill: null
 format: null
-handle: bannerImage
-height: 100
+handle: clickImage
+height: 200
 interlace: none
 mode: crop
-name: bannerImage
+name: clickImage
 position: center-center
 quality: null
 upscale: true
-width: 100
+width: 500

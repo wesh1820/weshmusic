@@ -2,57 +2,65 @@
 
 {% block content %}
 
-    <img class="musicp" src="https://images.wallpaperscraft.com/image/single/concert_crowd_people_134866_2560x1080.jpg" alt="Description of the image">
 
     <section class="mus">
         <h1>POPULAR SONGS</h1>
     </section>
-
     <section class="music-section">
         {% set entries = craft.entries().section('song').limit(3) %}
         {% for entry in entries %} 
             <article class="Mu">
                 <div>
-                    <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h2><a>{{ entry.title }}</a></h2>
-                    <a href="{{ entry.url }}">read more</a>
+                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                    <h2><a>{{entry.title}}</a></h2>
+                    
+                    
+                    
+                    <a href="{{entry.url}}">read more</a>
                 </div>
+                
             </article>
+
         {% endfor %}
     </section>
-
-    <section class="mus">
+        <section class="mus">
         <h1>POPULAR ARTIST</h1>
     </section>
-
     <section class="music-section">
         {% set entries = craft.entries().section('artist').limit(3) %}
         {% for entry in entries %} 
             <article class="Mu">
                 <div>
-                    <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h2><a>{{ entry.title }}</a></h2>
-                    <a href="{{ entry.url }}">read more</a>
+                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                    <h2><a>{{entry.title}}</a></h2>
+                    
+                    
+                    
+                    <a href="{{entry.url}}">read more</a>
                 </div>
+                
             </article>
+
         {% endfor %}
     </section>
-
-    <section class="mus">
+        <section class="mus">
         <h1>POPULAR ALBUMS</h1>
     </section>
-
     <section class="music-section">
-        {% set entries = craft.entries().section('album').limit(3) %}
+        {% set entries = craft.entries().section('album').limit(6) %}
         {% for entry in entries %} 
             <article class="Mu">
                 <div>
-                    <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h2><a>{{ entry.title }}</a></h2>
-                    <a href="{{ entry.url }}">read more</a>
+                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                    <h2><a>{{entry.title}}</a></h2>
+                    
+                    
+                    
+                    <a href="{{entry.url}}">read more</a>
                 </div>
+                
             </article>
+
         {% endfor %}
     </section>
-
 {% endblock %}
