@@ -1,6 +1,7 @@
 {
   "require": {
     "craftcms/cms": "^4.4.0",
+    "craftcms/element-api": "3.0.1.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -27,5 +28,12 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }

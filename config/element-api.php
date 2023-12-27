@@ -12,34 +12,34 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $songs = [];
-                    $artists = [];
+                    $song = [];
+                    $artist = [];
 
-                    
-                    $songsEntries = $entry->songs->all();
+                    // Assuming 'artist' is a field that directly relates to the artist entry
+                    $songEntries = $entry->song->all();
 
-                    foreach ($songsEntries as $songsEntry) {
-                        $songs[] = [
-                            'id' => $songsEntry->id,
-                            'title' => $songsEntry->title,
+                    foreach ($songEntries as $songEntry) {
+                        $song[] = [
+                            'id' => $songEntry->id,
+                            'title' => $songEntry->title, // Assuming 'title' is the artist's name
                         ];
                     }
 
-                   
-                    $artistEntries = $entry->artists->all();
+                    // Assuming 'artist' is a field that directly relates to the artist entry
+                    $artistEntries = $entry->artist->all();
 
                     foreach ($artistEntries as $artistEntry) {
-                        $artists[] = [
+                        $artist[] = [
                             'id' => $artistEntry->id,
-                            'title' => $artistEntry->title, 
+                            'title' => $artistEntry->title, // Assuming 'title' is the artist's name
                         ];
                     }
 
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
-                        'songs' => $songs,
-                        'artists' => $artists,
+                        'song' => $song,
+                        'artist' => $artist,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                     ];
                 },
@@ -52,22 +52,22 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $artists = [];
+                    $artist = [];
 
-                   
-                    $artistEntries = $entry->artists->all();
+                    // Assuming 'artist' is a field that directly relates to the artist entry
+                    $artistEntries = $entry->artist->all();
 
                     foreach ($artistEntries as $artistEntry) {
-                        $artists[] = [
+                        $artist[] = [
                             'id' => $artistEntry->id,
-                            'title' => $artistEntry->title, 
+                            'title' => $artistEntry->title, // Assuming 'title' is the artist's name
                         ];
                     }
 
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
-                        'artists' => $artists,
+                        'artist' => $artist,
                         'genre' => $entry->genre,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                     ];
@@ -81,11 +81,11 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $songs = [];
+                    $song = [];
 
-                   
-                    foreach ($entry->songs->all() as $song) {
-                        $songs[] = [
+                    // Loop through the song related to the artist
+                    foreach ($entry->song->all() as $song) {
+                        $song[] = [
                             'id' => $song->id,
                             'title' => $song->title,
                         ];
@@ -96,7 +96,7 @@ return [
                         'title' => $entry->title,
                         'nationality' => $entry->nationality,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
-                        'songs' => $songs,
+                        'song' => $song,
                     ];
                 },
             ];
@@ -110,11 +110,11 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $songs = [];
+                    $song = [];
 
-                  
-                    foreach ($entry->songs->all() as $song) {
-                        $songs[] = [
+                    // Loop through the song related to the artist
+                    foreach ($entry->song->all() as $song) {
+                        $song[] = [
                             'id' => $song->id,
                             'title' => $song->title,
                         ];
@@ -122,9 +122,9 @@ return [
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
-                        'artists' => $entry->artists,
+                        'artist' => $entry->artist,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
-                        'songs' => $songs,
+                        'song' => $song,
                     ];
                 },
             ];
@@ -137,22 +137,22 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $artists = [];
+                    $artist = [];
 
-                   
-                    $artistEntries = $entry->artists->all();
+                    // Assuming 'artist' is a field that directly relates to the artist entry
+                    $artistEntries = $entry->artist->all();
 
                     foreach ($artistEntries as $artistEntry) {
-                        $artists[] = [
+                        $artist[] = [
                             'id' => $artistEntry->id,
-                            'title' => $artistEntry->title, 
+                            'title' => $artistEntry->title, // Assuming 'title' is the artist's name
                         ];
                     }
 
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
-                        'artists' => $artists,
+                        'artist' => $artist,
                         'genre' => $entry->genre,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                     ];
@@ -167,11 +167,11 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $songs = [];
+                    $song = [];
 
-                  
-                    foreach ($entry->songs->all() as $song) {
-                        $songs[] = [
+                    // Loop through the song related to the artist
+                    foreach ($entry->song->all() as $song) {
+                        $song[] = [
                             'id' => $song->id,
                             'title' => $song->title,
                         ];
@@ -182,7 +182,7 @@ return [
                         'title' => $entry->title,
                         'nationality' => $entry->nationality,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
-                        'songs' => $songs,
+                        'song' => $song,
                     ];
                 },
             ];

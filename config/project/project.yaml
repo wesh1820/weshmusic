@@ -1,4 +1,4 @@
-dateModified: 1703376205
+dateModified: 1703709371
 email:
   fromEmail: weshmusic@gmail.com
   fromName: weshmusic
@@ -36,6 +36,11 @@ meta:
     dbfae31d-6a88-47e4-a7e5-23b4976e1377: bannerImage # bannerImage
     e66ba489-239f-4fc6-acea-d723aa129c65: videoclip # videoclip
     ee9cf4ef-3bcb-40b2-9c2a-d7ba66b661c4: release # release
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
