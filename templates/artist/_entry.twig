@@ -2,7 +2,7 @@
 
 {% block content %}
     <section class="article-details">
-       <img src="{{ entry.bannerImage.one().url('clickImage') }}" alt="{{ entry.title }}">
+       <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
         <h2>{{entry.title}}</h2>
         <p>Nationality: {{entry.nationality}}</p>
         

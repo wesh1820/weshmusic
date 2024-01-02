@@ -81,13 +81,11 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    $song = [];
-
-                    // Loop through the song related to the artist
-                    foreach ($entry->song->all() as $song) {
+                    $songEntries = $entry->song->all();
+                    foreach ($songEntries as $songEntry) {
                         $song[] = [
-                            'id' => $song->id,
-                            'title' => $song->title,
+                            'id' => $songEntry->id,
+                            'title' => $songEntry->title, // Assuming 'title' is the artist's name
                         ];
                     }
 
