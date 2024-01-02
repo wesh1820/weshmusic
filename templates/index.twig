@@ -3,7 +3,7 @@
       <section class="showcase-area" id="showcase">
       </section>
       <section class="download-now">
-         <h1>LOREM IPISUM</h1>
+         <h1>Discover all our music</h1>
          <div class="buttons">
             <a href="../WESHMusic/welcome.php" class="btn btn-apple"><i class="fab fa-apple"></i> App Store</a>
             <a href="../WESHMusic/welcome.php" class="btn btn-google"><i class="fab fa-google-play"></i> Google Play</a>
@@ -75,7 +75,7 @@
       
       <section id="testimonials">
          <div class="container">
-            <h2 class="section-title">New songs this week</h2>
+            <h2 class="section-title"> News from artists</h2>
             <div class="testimonial-wrapper">
                <div class="testimonial">
                {% set entries = craft.entries().section('artist').limit(3) %}
@@ -83,8 +83,7 @@
                <div class="testimonial-image">
                   <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
                   </div>
-                  <p class="testimonial-text">"I love how easy and intuitive the WESHMusic app is to use. It has made 3D printing a breeze for me!"</p>
-                  <p class="testimonial-author">- Elsa Smith</p>
+                  <p class="testimonial-text">{{entry.dialog}}</p>
                   {% endfor %}
                </div>
             </div>

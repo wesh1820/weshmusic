@@ -1,4 +1,4 @@
-dateModified: 1704199875
+dateModified: 1704209178
 email:
   fromEmail: weshmusic@gmail.com
   fromName: weshmusic
@@ -20,6 +20,7 @@ meta:
     8e1bdad0-912d-4aa1-9af9-8f8767edaa01: Default # Default
     51c5e28f-16de-46ac-a319-4cf205ceb250: clickImage # clickImage
     69b694fc-5ba6-431c-a5a2-7e26915e67a3: Default # Default
+    91ae1e85-45cd-4003-90bf-450ed64b47ba: Dialog # Dialog
     319dab0a-9518-4244-9c52-ea4fe4af5e99: Artist # Artist
     333e84b6-3acc-4085-9523-8d4201b1e272: Artist # Artist
     521d5b59-7b1c-46e7-93d6-b77f0f8fb7c7: nationality # nationality

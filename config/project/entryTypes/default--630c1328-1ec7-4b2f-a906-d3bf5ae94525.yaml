@@ -57,6 +57,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 91ae1e85-45cd-4003-90bf-450ed64b47ba # Dialog
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3cc795d8-3374-4e4d-80ce-b985f26a1313
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: dbfae31d-6a88-47e4-a7e5-23b4976e1377 # bannerImage
             instructions: null
             label: null
