@@ -105,13 +105,22 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    // Define $song or use a different variable
                     $song = [];
+                    $songEntries = $entry->song->all();
+
+                    foreach ($songEntries as $songEntry) {
+                        $song[] = [
+                            'id' => $songEntry->id,
+                            'title' => $songEntry->title,
+                            'duration' => $songEntry->duration,
+                        ];
+                    }
 
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
                         'song' => $song,
+                        'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                     ];
                 },
             ];
@@ -218,12 +227,21 @@ return [
                 'cache' => false,
                 'serializer' => 'jsonFeed',
                 'transformer' => function (Entry $entry) {
-                    // Define $song or use a different variable
                     $song = [];
+                    $songEntries = $entry->song->all();
+
+                    foreach ($songEntries as $songEntry) {
+                        $song[] = [
+                            'id' => $songEntry->id,
+                            'title' => $songEntry->title,
+                            'duration' => $songEntry->duration,
+                        ];
+                    }
 
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
+                        'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                         'song' => $song,
                     ];
                 },
