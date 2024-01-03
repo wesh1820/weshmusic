@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6aac8175d4c20a9a8b7fe16485f1e060",
+    "content-hash": "cefcd39404b58841769baca3ba0c5abe",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -491,11 +491,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.5.13",
+            "version": "4.5.14",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c94af041eaca79540eac8ce4352e7d5737de6785",
-                "reference": "c94af041eaca79540eac8ce4352e7d5737de6785",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/27277014272e8d372f0294bee60b274816f336b9",
+                "reference": "27277014272e8d372f0294bee60b274816f336b9",
                 "shasum": ""
             },
             "require": {
@@ -583,7 +583,7 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2023-12-15T19:23:31+00:00"
+            "time": "2024-01-02T17:52:44+00:00"
         },
         {
             "name": "craftcms/element-api",
@@ -634,6 +634,43 @@
                 "rss": "https://github.com/craftcms/element-api/commits/v2.atom"
             },
             "time": "2022-07-07T19:50:10+00:00"
+        },
+        {
+            "name": "craftcms/html-field",
+            "version": "2.0.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
+                "reference": "4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "craft\\htmlfield\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Base class for Craft CMS field types with HTML values.",
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/html-field/issues?state=open",
+                "source": "https://github.com/craftcms/html-field",
+                "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
+                "rss": "https://github.com/craftcms/html-field/commits/main.atom"
+            },
+            "time": "2023-09-17T11:24:51+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -2675,6 +2712,59 @@
                 "unix"
             ],
             "time": "2023-09-03T09:24:00+00:00"
+        },
+        {
+            "name": "spicyweb/craft-tinymce",
+            "version": "1.4.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spicywebau/craft-tinymce/zipball/509d7e3d157ee1a22e310713465866ba8477d844",
+                "reference": "509d7e3d157ee1a22e310713465866ba8477d844",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.2.0",
+                "craftcms/html-field": "^2.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "tinymce",
+                "name": "TinyMCE Field",
+                "class": "spicyweb\\tinymce\\Plugin",
+                "changelogUrl": "https://github.com/spicywebau/craft-tinymce/blob/1.x/CHANGELOG.md",
+                "downloadUrl": "https://github.com/spicywebau/craft-tinymce/archive/refs/tags/1.4.6.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "spicyweb\\tinymce\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Spicy Web",
+                    "email": "plugins@spicyweb.com.au",
+                    "homepage": "https://spicyweb.com.au/"
+                }
+            ],
+            "description": "Adds the TinyMCE rich text editor as a Craft CMS field type",
+            "keywords": [
+                "cms",
+                "craftcms",
+                "field",
+                "plugin",
+                "tinymce"
+            ],
+            "support": {
+                "issues": "https://github.com/spicywebau/craft-tinymce/issues",
+                "source": "https://github.com/spicywebau/craft-tinymce",
+                "docs": "https://github.com/spicywebau/craft-tinymce/blob/1.4.6/README.md",
+                "rss": "https://github.com/spicywebau/craft-tinymce/commits/1.x.atom"
+            },
+            "time": "2023-12-18T06:13:27+00:00"
         },
         {
             "name": "symfony/console",

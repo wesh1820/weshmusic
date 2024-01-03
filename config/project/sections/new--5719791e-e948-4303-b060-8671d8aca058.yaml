@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: new
+name: New
+propagationMethod: all
+siteSettings:
+  80652ae7-dc2f-4584-a077-73d789627636: # weshmusic
+    enabledByDefault: true
+    hasUrls: true
+    template: new/_entry
+    uriFormat: 'new/{slug}'
+type: channel
