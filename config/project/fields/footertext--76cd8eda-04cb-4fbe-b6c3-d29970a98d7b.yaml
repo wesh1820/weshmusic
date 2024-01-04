@@ -1,0 +1,23 @@
+columnSuffix: luggzjkf
+contentColumnType: text
+fieldGroup: 2266e771-fff7-4ddc-9312-203b8dea6017 # Common
+handle: footertext
+instructions: null
+name: Footertext
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  tinymceConfig: null
+translationKeyFormat: null
+translationMethod: none
+type: spicyweb\tinymce\fields\TinyMCE

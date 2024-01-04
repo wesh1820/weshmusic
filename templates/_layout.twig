@@ -29,11 +29,13 @@
     {% block content %}
     {# hier komt de content #}
     {% endblock %}
-   
+
+
     <footer>
-        <p>With a commitment to quality content for the Craft-community.</p>
-        <a href="#">privacy policy</a>
-    </footer>
+      {% set footer = craft.entries().section('footer').one() %}
+      {{footer.footertext}}
+
+   
 
 </body>
     <script>

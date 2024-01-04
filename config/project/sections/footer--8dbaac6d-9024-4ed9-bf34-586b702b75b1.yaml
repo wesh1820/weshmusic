@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: footer
+name: Footer
+propagationMethod: all
+siteSettings:
+  3c8601ab-dd57-400e-8cf8-d48d90707958: # $ALLOW_ADMIN_CHANGES
+    enabledByDefault: true
+    hasUrls: true
+    template: footer/_entry
+    uriFormat: 'footer/{slug}'
+  80652ae7-dc2f-4584-a077-73d789627636: # weshmusic
+    enabledByDefault: true
+    hasUrls: true
+    template: footer/_entry
+    uriFormat: 'footer/{slug}'
+type: channel

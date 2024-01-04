@@ -4,8 +4,96 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cefcd39404b58841769baca3ba0c5abe",
+    "content-hash": "8eceaa37df916849eba06fae7079e747",
     "packages": [
+        {
+            "name": "abmat/craft-translationhelper",
+            "version": "1.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abm-werbeagentur/craft-translationhelper/zipball/5ab23f280d171cb8aaee9eeb5a83f5f632801331",
+                "reference": "5ab23f280d171cb8aaee9eeb5a83f5f632801331",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.4.0",
+                "php": ">=8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "abm-translationhelper",
+                "name": "Translation Helper",
+                "developer": "abm Feregyhazy & Simon GmbH",
+                "documentationUrl": "https://github.com/abm-werbeagentur/craft-translationhelper",
+                "class": "abmat\\translationhelper\\TranslationHelper"
+            },
+            "autoload": {
+                "psr-4": {
+                    "abmat\\translationhelper\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Translation helper",
+            "support": {
+                "email": "developer@abm.at",
+                "issues": "https://github.com/abm-werbeagentur/craft-translationhelper/issues?state=open",
+                "source": "https://github.com/abm-werbeagentur/craft-translationhelper",
+                "docs": "https://github.com/abm-werbeagentur/craft-translationhelper",
+                "rss": "https://github.com/abm-werbeagentur/craft-translationhelper/releases.atom"
+            },
+            "time": "2024-01-02T15:28:00+00:00"
+        },
+        {
+            "name": "adigital/cookie-consent-banner",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/a-digital/cookie-consent-banner/zipball/8e3b5539dac17e720142f821ec3a7692575a0188",
+                "reference": "8e3b5539dac17e720142f821ec3a7692575a0188",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Cookie Consent Banner",
+                "handle": "cookie-consent-banner",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://github.com/a-digital/cookie-consent-banner/blob/master/CHANGELOG.md",
+                "class": "adigital\\cookieconsentbanner\\CookieConsentBanner"
+            },
+            "autoload": {
+                "psr-4": {
+                    "adigital\\cookieconsentbanner\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark @ A Digital",
+                    "homepage": "https://adigital.agency"
+                }
+            ],
+            "description": "Add a configurable cookie consent banner to the website.",
+            "keywords": [
+                "cms",
+                "cookie consent banner",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/a-digital/cookie-consent-banner/blob/master/README.md",
+                "issues": "https://github.com/a-digital/cookie-consent-banner/issues"
+            },
+            "time": "2022-08-11T15:32:28+00:00"
+        },
         {
             "name": "cebe/markdown",
             "version": "1.2.1",
@@ -54,6 +142,54 @@
                 "markdown-extra"
             ],
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "codemonauts/craft-instagram-feed",
+            "version": "2.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codemonauts/craft-instagram-feed/zipball/fd79158917d2aafc75be9bebceef163576b10cef",
+                "reference": "fd79158917d2aafc75be9bebceef163576b10cef",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "ext-json": "*"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "instagramfeed",
+                "class": "codemonauts\\instagramfeed\\InstagramFeed",
+                "name": "Instagram Feed"
+            },
+            "autoload": {
+                "psr-4": {
+                    "codemonauts\\instagramfeed\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codemonauts",
+                    "homepage": "https://codemonauts.com"
+                }
+            ],
+            "description": "Craft CMS plugin to receive Instagram feed data as variable in templates.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "instagram"
+            ],
+            "support": {
+                "source": "https://github.com/codemonauts/craft-instagram-feed",
+                "docs": "https://plugins.codemonauts.com/plugins/instagramfeed/Introduction.html",
+                "issues": "https://github.com/codemonauts/craft-instagram-feed/issues"
+            },
+            "time": "2022-10-21T15:28:00+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -737,6 +873,60 @@
             "time": "2023-09-20T01:56:57+00:00"
         },
         {
+            "name": "craftpulse/craft-tweet-feed",
+            "version": "4.2.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftpulse/craft-tweet-feed/zipball/8d2b44482b460fbe6da416e9db73c38171a54ca3",
+                "reference": "8d2b44482b460fbe6da416e9db73c38171a54ca3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-beta.1",
+                "guzzlehttp/oauth-subscriber": "^0.6.0",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Tweet Feed",
+                "handle": "tweetfeed",
+                "developer": "percipiolondon",
+                "developerUrl": "https://percipio.london",
+                "documentationUrl": "https://github.com/percipioglobal/craft-tweet-feed/blob/v4/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-tweet-feed/v4/CHANGELOG.md",
+                "class": "percipiolondon\\tweetfeed\\TweetFeed"
+            },
+            "autoload": {
+                "psr-4": {
+                    "percipiolondon\\tweetfeed\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Percipio.London",
+                    "homepage": "https://percipio.london"
+                }
+            ],
+            "description": "Get the latest tweets from a Twitter handle with your own design",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "tweets",
+                "twitter"
+            ],
+            "support": {
+                "email": "support@percipio.london",
+                "docs": "https://github.com/percipioglobal/craft-tweet-feed/blob/v4/README.md",
+                "issues": "https://github.com/percipioglobal/craft-tweet-feed/issues"
+            },
+            "time": "2023-02-06T13:25:24+00:00"
+        },
+        {
             "name": "creocoder/yii2-nested-sets",
             "version": "0.9.0",
             "dist": {
@@ -1265,6 +1455,52 @@
             "time": "2023-12-03T20:35:24+00:00"
         },
         {
+            "name": "guzzlehttp/oauth-subscriber",
+            "version": "0.6.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/oauth-subscriber/zipball/8d6cab29f8397e5712d00a383eeead36108a3c1f",
+                "reference": "8d6cab29f8397e5712d00a383eeead36108a3c1f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.5|^7.2",
+                "guzzlehttp/psr7": "^1.7|^2.0",
+                "php": ">=5.5.0"
+            },
+            "suggest": {
+                "ext-openssl": "Required to sign using RSA-SHA1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Subscriber\\Oauth\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle OAuth 1.0 subscriber",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "oauth"
+            ],
+            "time": "2021-07-13T12:01:32+00:00"
+        },
+        {
             "name": "guzzlehttp/promises",
             "version": "2.0.2",
             "dist": {
@@ -1562,6 +1798,55 @@
             "time": "2022-08-09T13:29:29+00:00"
         },
         {
+            "name": "jandh/translator",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jan-dh/translator/zipball/a7ddd137f5d6785000a03107de95ac47b6656aa2",
+                "reference": "a7ddd137f5d6785000a03107de95ac47b6656aa2",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0|^4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Translator",
+                "handle": "translator",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://github.com/jan-dh/translator/blob/master/CHANGELOG.md",
+                "class": "jandh\\translator\\Translator"
+            },
+            "autoload": {
+                "psr-4": {
+                    "jandh\\translator\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan D'Hollander",
+                    "homepage": "https://www.thebasement.be/"
+                }
+            ],
+            "description": "A translation field for Craft CMS ",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "translator"
+            ],
+            "support": {
+                "docs": "https://github.com/jan-dh/translator#readme",
+                "issues": "https://github.com/jan-dh/translator/issues"
+            },
+            "time": "2022-11-30T20:05:08+00:00"
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "v5.2.13",
             "dist": {
@@ -1819,6 +2104,93 @@
                 "psr-3"
             ],
             "time": "2023-10-27T15:25:26+00:00"
+        },
+        {
+            "name": "netants/whatsrabbit-live-chat",
+            "version": "v1.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetAnts/WhatsRabbit-LiveChat-Craft-plugin/zipball/56ec7dca381b3258767b9934d084a1bfda1c98a8",
+                "reference": "56ec7dca381b3258767b9934d084a1bfda1c98a8",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.4",
+                "whatsrabbit/live-chat-plugin-core": "^1.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "What'sRabbit LiveChat",
+                "handle": "whatsrabbit-live-chat"
+            },
+            "autoload": {
+                "psr-4": {
+                    "NetAnts\\WhatsRabbitLiveChat\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "NetAnts",
+                    "email": "info@netants.nl",
+                    "homepage": "https://netants.nl"
+                }
+            ],
+            "description": "This plugin provides a What'sRabbit LiveChat widget for your CraftCMS website",
+            "time": "2023-10-16T12:24:46+00:00"
+        },
+        {
+            "name": "nyholm/psr7",
+            "version": "1.8.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/aa5fc277a4f5508013d571341ade0c3886d4d00e",
+                "reference": "aa5fc277a4f5508013d571341ade0c3886d4d00e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0"
+            },
+            "provide": {
+                "php-http/message-factory-implementation": "1.0",
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "time": "2023-11-13T09:31:12+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2765,6 +3137,60 @@
                 "rss": "https://github.com/spicywebau/craft-tinymce/commits/1.x.atom"
             },
             "time": "2023-12-18T06:13:27+00:00"
+        },
+        {
+            "name": "ssplugin/ss-twitter-feed",
+            "version": "1.0.9",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ssplugin/ss-twitter-feed/zipball/0cf4b2b7f53d8c497f6e4c10470628108e98acd5",
+                "reference": "0cf4b2b7f53d8c497f6e4c10470628108e98acd5",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0",
+                "php": "^8.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SS Twitter Feed",
+                "handle": "ss-twitter-feed",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "documentationUrl": "https://github.com/ssplugin/ss-twitter-feed/blob/master/README.md",
+                "changelogUrl": "https://github.com/ssplugin/ss-twitter-feed/blob/master/CHANGELOG.md",
+                "components": {
+                    "ssTwitterFeedService": "ssplugin\\sstwitterfeed\\services\\SsTwitterFeedService"
+                },
+                "class": "ssplugin\\sstwitterfeed\\SsTwitterFeed"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ssplugin\\sstwitterfeed\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SystemSeeders",
+                    "homepage": "http://www.systemseeders.com/"
+                }
+            ],
+            "description": "Show Recent Tweets.",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "ss twitter feed"
+            ],
+            "support": {
+                "docs": "https://github.com/ssplugin/ss-twitter-feed/blob/master/README.md",
+                "issues": "https://github.com/ssplugin/ss-twitter-feed"
+            },
+            "time": "2022-06-02T09:25:50+00:00"
         },
         {
             "name": "symfony/console",
@@ -4743,6 +5169,40 @@
                 "graphql"
             ],
             "time": "2023-07-05T14:23:37+00:00"
+        },
+        {
+            "name": "whatsrabbit/live-chat-plugin-core",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/rabbit-software%2Fwhatsrabbit-livechat/repository/archive.zip?sha=a0a86ebda5461a8fc4be9801ab6720c3765f7366",
+                "reference": "a0a86ebda5461a8fc4be9801ab6720c3765f7366",
+                "shasum": ""
+            },
+            "require": {
+                "nyholm/psr7": "^1.8",
+                "php": ">=8.0 <8.3",
+                "psr/http-client-implementation": "1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Whatsrabbit\\LiveChatPluginCore\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "NetAnts",
+                    "email": "info@netants.nl",
+                    "homepage": "https://www.netants.nl"
+                }
+            ],
+            "description": "Facilitates authorization for the What'sRabbit Live Chat",
+            "homepage": "https://www.whatsrabbit.com/",
+            "time": "2023-08-09T08:12:28+00:00"
         },
         {
             "name": "yiisoft/yii2",

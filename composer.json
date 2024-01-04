@@ -1,8 +1,15 @@
 {
   "require": {
+    "abmat/craft-translationhelper": "^1.0",
+    "adigital/cookie-consent-banner": "2.0.0",
+    "codemonauts/craft-instagram-feed": "2.1.0",
     "craftcms/cms": "^4.4.0",
     "craftcms/element-api": "3.0.1.1",
+    "craftpulse/craft-tweet-feed": "4.2.0",
+    "jandh/translator": "2.0.0",
+    "netants/whatsrabbit-live-chat": "v1.1.0",
     "spicyweb/craft-tinymce": "1.4.6",
+    "ssplugin/ss-twitter-feed": "1.0.9",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

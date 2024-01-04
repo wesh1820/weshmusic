@@ -1,0 +1,9 @@
+baseUrl: '@web/'
+enabled: '1'
+handle: allowAdminChanges
+hasUrls: true
+language: nl-BE
+name: $ALLOW_ADMIN_CHANGES
+primary: false
+siteGroup: 8615e937-beb4-45a0-b4b8-79b483a3f8f4 # Nederlands
+sortOrder: 2
