@@ -1106,4 +1106,8 @@ footer {
     
     width: 98%;
 }
+iframe {
+    width: 500px;
+    height: 350px;
+}
 }

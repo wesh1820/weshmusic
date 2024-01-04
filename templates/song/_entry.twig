@@ -27,7 +27,7 @@
 
         {% if entry.videoclip %}
             {# Assuming entry.videoclip contains a YouTube URL #}
-            <iframe width="560" height="315" src="{{ entry.videoclip }}" frameborder="0" allowfullscreen></iframe>
+            <iframe src="{{ entry.videoclip }}" frameborder="0" allowfullscreen></iframe>
         {% endif %}
         
         <p>{{ entry.lyrics }}</p>

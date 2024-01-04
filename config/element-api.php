@@ -19,6 +19,7 @@ return [
                         $song[] = [
                             'id' => $songEntry->id,
                             'title' => $songEntry->title,
+                            'duration' => $entry->duration,
                         ];
                     }
 
@@ -34,6 +35,7 @@ return [
                         'id' => $entry->id,
                         'title' => $entry->title,
                         'song' => $song,
+                        'release' => $entry->release,
                         'artist' => $artist,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                     ];
@@ -139,6 +141,7 @@ return [
                         $song[] = [
                             'id' => $songEntry->id,
                             'title' => $songEntry->title,
+                            'duration' => $entry->duration,
                         ];
                     }
                     $artist = [];
@@ -152,6 +155,7 @@ return [
                     return [
                         'id' => $entry->id,
                         'title' => $entry->title,
+                        'release' => $entry->release,
                         'artist' => $entry->artist,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                         'song' => $song,
