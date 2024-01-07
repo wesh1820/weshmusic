@@ -1,11 +1,15 @@
 {% extends "_layout" %}
 
 {% block content %}
-<section class="mus">
-        <h1>Albums</h1>
+    <section class="music-content">
+            {% set entries = craft.entries().section('Home').limit(80) %}
+        
+        {% for entry in entries %}
+       <h2>{{ entry.cat2 }}
+                {% endfor %}
     </section>
     <section class="music-section">
-        {% set entries = craft.entries().section('album').limit(4) %}
+        {% set entries = craft.entries().section('album').limit(80) %}
         
         {% for entry in entries %}
             <article class="Mu">
@@ -16,7 +20,25 @@
                 </div>
             </article>
         {% endfor %}
-        
-       
     </section>
+
+    <script>
+        let searchInput = document.querySelector(".search");
+        let albumTitles = document.querySelectorAll(".music-section h2 a");
+
+        searchInput.addEventListener("input", function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+
+            albumTitles.forEach(titleLink => {
+                const albumTitle = titleLink.textContent.toLowerCase();
+                const albumArticle = titleLink.closest('article');
+
+                if (albumTitle.includes(searchTerm)) {
+                    albumArticle.style.display = "block"; // Show the matching album
+                } else {
+                    albumArticle.style.display = "none"; // Hide non-matching albums
+                }
+            });
+        });
+    </script>
 {% endblock %}

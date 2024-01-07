@@ -1,9 +1,9 @@
-columnSuffix: null
+columnSuffix: kjgdudew
 contentColumnType: string
 fieldGroup: 2266e771-fff7-4ddc-9312-203b8dea6017 # Common
-handle: new
+handle: artist
 instructions: null
-name: New
+name: Artist
 searchable: false
 settings:
   allowSelfRelations: false

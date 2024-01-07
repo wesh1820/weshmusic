@@ -1,105 +1,132 @@
-{% extends "_layout.twig" %}
+{% extends "_layout2.twig" %}
+
 {% block content %}
-      <section class="showcase-area" id="showcase">
-      </section>
-      <section class="download-now">
-         <h1>Discover all our music</h1>
-         <div class="buttons">
-            <a href="../WESHMusic/welcome.php" class="btn btn-apple"><i class="fab fa-apple"></i> App Store</a>
-            <a href="../WESHMusic/welcome.php" class="btn btn-google"><i class="fab fa-google-play"></i> Google Play</a>
-         </div>
-      </section>
-      <section id="about">
-         <div class="about-wrapper container">
-            <div class="about-text">
-               <p class="small">Songs</p>
-               <h2>New Songs</h2>
-               <section class="music-home">
-        {% set entries = craft.entries().section('song').limit(3) %}
-        {% for entry in entries %} 
-            <article class="Muu">
-                <div>
-                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h3><a>{{entry.title}}</a></h3>
-                    <a href="{{entry.url}}">read more</a>
-                </div>
-            </article>
-        {% endfor %}
-    </section>
-            </div>
+    {% set entries = craft.entries().section('header') %}
+    {% for entry in entries %} 
+<section class="showcase-area" id="showcase">
 
-         </div>
-      </section>
-      <section id="about2">
-         <div class="about-wrapper container">
-            
-            <div class="about-text">
-               <p class="small">Albums</p>
-               <h2>New Albums</h2>
-               <section class="music-home">
-        {% set entries = craft.entries().section('artist').limit(3) %}
-        {% for entry in entries %} 
-            <article class="Muuu">
-                <div>
-                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h3><a>{{entry.title}}</a></h3>
-                    <a href="{{entry.url}}">read more</a>
-                </div> 
-            </article>
-        {% endfor %}
-    </section>
+        <article class="header">
+            <div>
+                <img src="{{ entry.headerimage.one().url('headerimage') }}" alt="{{ entry.title }}" class="no-border-radius">
             </div>
-         </div>
-      </section>
-      <section id="about">
-         <div class="about-wrapper container">
-            <div class="about-text">
-               <p class="small">Artists</p>
-               <h2>New Artists</h2>
-                <section class="music-home">
-        {% set entries = craft.entries().section('album').limit(3) %}
-        {% for entry in entries %} 
-            <article class="Muu">
-                <div>
-                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h3><a>{{entry.title}}</a></h3>
-                    <a href="{{entry.url}}">read more</a>
-                </div>
-                
-            </article>
-        {% endfor %}
-    </section>
-            </div>
-         </div>
-      </section>
-      
-      <section id="testimonials">
-         <div class="container">
-            <h2 class="section-title"> Speaking artists</h2>
-            <div class="testimonial-wrapper">
-               <div class="testimonial">
-               {% set entries = craft.entries().section('artist').limit(3) %}
-        {% for entry in entries %} 
-               <div class="testimonial-image">
-                  <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                  </div>
-                  <p class="testimonial-text">{{entry.dialog}}</p>
-                  {% endfor %}
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <section>
-   {% set tweets = craft.tweetfeed.tweets(3, 'author_id,context_annotations', '&exclude=retweets,replies&user.fields=id') %}
-   
-   {% for tweet in tweets %}
-      <div>
-          <h3>{{ tweet.text }}</h3>
-      </div>
-   {% endfor %}
+        </article>
 </section>
+
+    
+    <section class="download-now">
+        <h1>{{ entry.slogan }}</h1>
+        <div class="buttons">
+            <a href="" class="btn btn-apple"><i class="fab fa-apple"></i> App Store</a>
+            <a href="" class="btn btn-google"><i class="fab fa-google-play"></i> Google Play</a>
+        </div>
+    </section>
+    {% endfor %}
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
+                    {% for entry in entries %} 
+                <p class="small">{{ entry.cat1 }}</p>
+                <h2>{{ entry.cat1description }}
+                 {% endfor %}
+                </div>
+                <section class="music-home">
+                    {% set entries = craft.entries().section('song').limit(3) %}
+                    {% for entry in entries %} 
+                        <article class="Muu">
+                            <div>
+                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                                <h3><a>{{ entry.title }}</a></h3>
+                                <a href="{{ entry.url }}">read more</a>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="about2">
+        <div class="about-wrapper container">
+            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
+                    {% for entry in entries %} 
+                <p class="small">{{ entry.cat2 }}</p>
+                <h2>{{ entry.cat2description }}
+                 {% endfor %}
+                </div>
+                <section class="music-home">
+                    {% set entries = craft.entries().section('artist').limit(3) %}
+                    {% for entry in entries %} 
+                        <article class="Muuu">
+                            <div>
+                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                                <h3><a>{{ entry.title }}</a></h3>
+                                <a href="{{ entry.url }}">read more</a>
+                            </div> 
+                        </article>
+                    {% endfor %}
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
+                    {% for entry in entries %} 
+                <p class="small">{{ entry.cat3 }}</p>
+                <h2>{{ entry.cat3description }}
+                 {% endfor %}
+                </div>
+                <section class="music-home">
+                    {% set entries = craft.entries().section('album').limit(3) %}
+                    {% for entry in entries %} 
+                        <article class="Muu">
+                            <div>
+                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                                <h3><a>{{ entry.title }}</a></h3>
+                                <a href="{{ entry.url }}">read more</a>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </section>
+            </div>
+        </div>
+    </section>
       
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="./script.js"></script>
+    <section id="about2">
+        <div class="about-wrapper container">
+            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
+                    {% for entry in entries %} 
+                <p class="small">{{ entry.cat4 }}</p>
+                <h2>{{ entry.cat4description }}
+                 {% endfor %}
+                </div>
+                <section class="music-home">
+                    {% set entries = craft.entries().section('new').limit(3) %}
+                    {% for entry in entries %} 
+                        <article class="Muu">
+                            <div>
+                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                                <h3><a>{{ entry.title }}</a></h3>
+                                <a href="{{ entry.url }}">read more</a>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        {% set tweets = craft.tweetfeed.tweets(3, 'author_id,context_annotations', '&exclude=retweets,replies&user.fields=id') %}
+        
+        {% for tweet in tweets %}
+            <div>
+                <h3>{{ tweet.text }}</h3>
+            </div>
+        {% endfor %}
+    </section>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
 {% endblock %}

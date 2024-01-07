@@ -1,0 +1,19 @@
+columnSuffix: tkzyutzv
+contentColumnType: text
+fieldGroup: 2266e771-fff7-4ddc-9312-203b8dea6017 # Common
+handle: homeUrl
+instructions: null
+name: HomeUrl
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

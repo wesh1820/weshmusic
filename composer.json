@@ -2,7 +2,7 @@
   "require": {
     "abmat/craft-translationhelper": "^1.0",
     "adigital/cookie-consent-banner": "2.0.0",
-    "codemonauts/craft-instagram-feed": "2.1.0",
+    "codemonauts/craft-instagram-feed": "2.2.0",
     "craftcms/cms": "^4.4.0",
     "craftcms/element-api": "3.0.1.1",
     "craftpulse/craft-tweet-feed": "4.2.0",

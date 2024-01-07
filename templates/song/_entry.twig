@@ -1,4 +1,4 @@
-{% extends "_layout2" %}
+{% extends "_layout" %}
 
 {% block content %}
     <section class="article-details">
@@ -10,7 +10,8 @@
         {% set albums = craft.entries.section('album').relatedTo(entry).limit(3) %}
         
         {% for albumEntry in albums %} 
-            <p>Album: {{ albumEntry.title }}</p>
+         <h1>Albums</h1>
+         <p>{{ albumEntry.title }}</p>
             
             {# Execute the songs query to get the actual results #}
             
@@ -19,7 +20,8 @@
         {% set artists = craft.entries.section('artist').relatedTo(entry).limit(3) %}
 
         {% for artistEntry in artists %} 
-            <p>Artists: {{ artistEntry.title }}</p>
+         <h1>Artists</h1>
+            <p> {{ artistEntry.title }}</p>
             
             {# Execute the songs query to get the actual results #}
             

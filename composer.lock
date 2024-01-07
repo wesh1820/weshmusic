@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8eceaa37df916849eba06fae7079e747",
+    "content-hash": "eea79132bc10347dc5a1eeba00ba07a9",
     "packages": [
         {
             "name": "abmat/craft-translationhelper",
@@ -145,11 +145,11 @@
         },
         {
             "name": "codemonauts/craft-instagram-feed",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codemonauts/craft-instagram-feed/zipball/fd79158917d2aafc75be9bebceef163576b10cef",
-                "reference": "fd79158917d2aafc75be9bebceef163576b10cef",
+                "url": "https://api.github.com/repos/codemonauts/craft-instagram-feed/zipball/88d2301770c49a8b6c91e830e5755f47c86614fd",
+                "reference": "88d2301770c49a8b6c91e830e5755f47c86614fd",
                 "shasum": ""
             },
             "require": {
@@ -189,7 +189,7 @@
                 "docs": "https://plugins.codemonauts.com/plugins/instagramfeed/Introduction.html",
                 "issues": "https://github.com/codemonauts/craft-instagram-feed/issues"
             },
-            "time": "2022-10-21T15:28:00+00:00"
+            "time": "2024-01-04T15:39:35+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -2428,15 +2428,31 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.24.5",
+            "version": "1.25.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpdoc-parser.git",
+                "reference": "bd84b629c8de41aa2ae82c067c955e06f1b00240"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
-                "reference": "fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/bd84b629c8de41aa2ae82c067c955e06f1b00240",
+                "reference": "bd84b629c8de41aa2ae82c067c955e06f1b00240",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^2.0",
+                "nikic/php-parser": "^4.15",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.5",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "symfony/process": "^5.2"
             },
             "type": "library",
             "autoload": {
@@ -2446,11 +2462,16 @@
                     ]
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2023-12-16T09:33:33+00:00"
+            "support": {
+                "issues": "https://github.com/phpstan/phpdoc-parser/issues",
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.25.0"
+            },
+            "time": "2024-01-04T17:06:16+00:00"
         },
         {
             "name": "pixelandtonic/imagine",

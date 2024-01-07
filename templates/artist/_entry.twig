@@ -1,13 +1,19 @@
-{% extends "_layout2" %}
+{% extends "_layout" %}
 
 {% block content %}
     <section class="article-details">
        <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
         <h2>{{entry.title}}</h2>
         <p>Nationality: {{entry.nationality}}</p>
-        
-        
-       
-      
+         {% set songs = craft.entries.section('song').relatedTo(entry) %}
+        <h1>Songs</h1>
+        {% for songsEntry in songs %} 
+            <p>{{ songsEntry.title }}</p>
+            
+            
+            {# Execute the songs query to get the actual results #}
+            
+        {% endfor %}
+
     </section>
 {% endblock %}

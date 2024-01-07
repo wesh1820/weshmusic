@@ -1,4 +1,4 @@
-dateModified: 1704345375
+dateModified: 1704660934
 email:
   fromEmail: weshmusic@gmail.com
   fromName: weshmusic
@@ -13,36 +13,57 @@ fs:
     url: '@web'
 meta:
   __names__:
+    0fe5b96f-f14b-4e47-8821-571a78461057: Cat2 # Cat2
     1c1a5d81-6138-4d0d-90cc-c106b037ca4a: genre # genre
-    2c7b97f9-025f-4d92-bc09-12e676d46ee6: New # New
+    1cced604-0211-4c3d-a381-95153a6a03ec: cat1description # cat1description
+    2f472862-5e47-49b4-ad1e-94a1e618db9a: Cat3 # Cat3
     3c8601ab-dd57-400e-8cf8-d48d90707958: $ALLOW_ADMIN_CHANGES # $ALLOW_ADMIN_CHANGES
     3ef8b120-80e0-43f2-a45f-a26d01567382: clickImage # clickImage
     4b5394d6-2042-4375-9992-a2143c41d76c: Album # Album
     5cf994e1-5ae5-4c05-ba71-b26aa0dc0230: Default # Default
+    6a2d1752-12c3-4ee0-b8b5-3b1e0be43969: Cat4 # Cat4
+    7c5d50c4-11f3-44a1-98b4-fa9e1533e07a: cat3Url # cat3Url
     7e95d83a-0e02-4c1e-a67f-7e80d418f84c: music-assets # music-assets
     8a576cb0-ab59-4f0c-a154-9ef40473ae9d: Default # Default
+    8bede9b3-7de3-4595-bdbe-92bb35f96b6a: Slogan # Slogan
+    08bf68a4-3ed6-460a-86ef-d2eaf97bfefc: Artist # Artist
     8dbaac6d-9024-4ed9-bf34-586b702b75b1: Footer # Footer
     8e1bdad0-912d-4aa1-9af9-8f8767edaa01: Default # Default
+    9f274f79-6a92-45e6-b7b0-e31fdf0e42a3: cat3description # cat3description
+    13e1c4ab-eedb-4142-a0e2-8e2b8df56eab: HeaderLogo # HeaderLogo
+    41a8a889-1303-4bfc-8ec2-d32f62c0c6f6: HeaderImage # HeaderImage
     51c5e28f-16de-46ac-a319-4cf205ceb250: clickImage # clickImage
+    59dba1bc-4502-4a26-b5d4-1c6d72495732: Default # Default
     69b694fc-5ba6-431c-a5a2-7e26915e67a3: Default # Default
     76cd8eda-04cb-4fbe-b6c3-d29970a98d7b: Footertext # Footertext
+    80e1ba5d-816c-4555-8c5e-27e34a5fcbc1: cat1Url # cat1Url
     91ae1e85-45cd-4003-90bf-450ed64b47ba: Dialog # Dialog
+    92e0842d-3357-4e4f-a39d-f81a6619289d: cat4description # cat4description
     319dab0a-9518-4244-9c52-ea4fe4af5e99: Artist # Artist
-    333e84b6-3acc-4085-9523-8d4201b1e272: Artist # Artist
+    461c2288-72cc-4f7a-bac4-dc96a43ce01f: Song # Song
     521d5b59-7b1c-46e7-93d6-b77f0f8fb7c7: nationality # nationality
     630c1328-1ec7-4b2f-a906-d3bf5ae94525: Default # Default
     00826af6-4c36-4085-a8bd-9cee32020e14: bannerImage # bannerImage
+    859afa3a-21e6-4164-a8f1-1613daef7226: header # header
     1732db7e-48de-4cf2-9bb7-3acac5fb9573: Song # Song
     2266e771-fff7-4ddc-9312-203b8dea6017: Common # Common
-    5311e559-394d-4e8d-94f2-b9da28794560: Album # Album
     8615e937-beb4-45a0-b4b8-79b483a3f8f4: Nederlands # Nederlands
     11031fd5-cbc8-43b5-9bc7-8b399a1b6c8c: duration # duration
-    79353fa9-884d-4ed5-9f3b-6a87701ccee8: Song # Song
+    33624e48-8706-4e28-96ea-efd9cf6ec687: Cat1 # Cat1
     80652ae7-dc2f-4584-a077-73d789627636: weshmusic # weshmusic
     5719791e-e948-4303-b060-8671d8aca058: New # New
+    add0ef61-45e3-4190-9e0b-a1dfba841d84: homeLinkText # homeLinkText
+    b2a5f022-170e-4d9a-a464-0219e755b5b2: HeaderImage # HeaderImage
+    b76daf65-8015-4869-b5e1-3a422095529b: Default # Default
+    be49acfc-4efa-4988-bbe6-ebb3e8dba57c: cat2description # cat2description
+    c00bdb5d-5a28-49d3-8435-375820f5779e: siteName # siteName
     c19c22a7-9f04-46d9-ac9e-b34f35f6d425: weshmusic # weshmusic
     c862b062-b584-4859-b69d-f911004602e1: lyrics # lyrics
+    cf50682e-3df4-4d5e-9791-7bcda7a45272: Home # Home
+    d532c260-b22a-4a72-9ef9-c2b22f583365: cat2Url # cat2Url
     dbfae31d-6a88-47e4-a7e5-23b4976e1377: bannerImage # bannerImage
+    dc072e51-42ba-4d37-9d48-9536f8952ec8: HomeUrl # HomeUrl
+    dc5fa12b-4a76-44a9-a383-6422d369ef44: Album # Album
     e66ba489-239f-4fc6-acea-d723aa129c65: videoclip # videoclip
     ee9cf4ef-3bcb-40b2-9c2a-d7ba66b661c4: release # release
 plugins:

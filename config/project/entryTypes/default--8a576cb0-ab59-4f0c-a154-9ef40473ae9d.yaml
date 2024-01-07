@@ -43,6 +43,78 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 33624e48-8706-4e28-96ea-efd9cf6ec687 # Cat1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 395c3f84-b0ad-4f06-ac07-98f2c84a37cc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 80e1ba5d-816c-4555-8c5e-27e34a5fcbc1 # cat1Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ced88a2-a77e-494c-a8d6-abcec04ac864
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0fe5b96f-f14b-4e47-8821-571a78461057 # Cat2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 365fbe19-5f46-47b6-8177-8b8bd1c01c7c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d532c260-b22a-4a72-9ef9-c2b22f583365 # cat2Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 886fb537-bbe6-4d99-8d9d-0541db7b4bab
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f472862-5e47-49b4-ad1e-94a1e618db9a # Cat3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f911cf1b-8693-49d1-a0f0-7a09cb108cef
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7c5d50c4-11f3-44a1-98b4-fa9e1533e07a # cat3Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80ab817c-be5a-4d2b-bc67-57ee5a3ce150
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: bfe5024b-d450-4d41-bde0-f67ebf182688
         userCondition: null

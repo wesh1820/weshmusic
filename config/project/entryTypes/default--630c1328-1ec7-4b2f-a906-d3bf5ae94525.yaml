@@ -33,7 +33,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5311e559-394d-4e8d-94f2-b9da28794560 # Album
+            fieldUid: 5311e559-394d-4e8d-94f2-b9da28794560
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 79353fa9-884d-4ed5-9f3b-6a87701ccee8 # Song
+            fieldUid: 79353fa9-884d-4ed5-9f3b-6a87701ccee8
             instructions: null
             label: null
             required: false

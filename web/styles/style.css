@@ -13,6 +13,9 @@ a{
     text-decoration: none;
     font-family: system-ui;
 }
+a:visited {
+    color: #3e771585;
+}
 .navbar {
     background-color: #000000f0;
     padding: 15px;
@@ -22,7 +25,6 @@ a{
     /* height: 80px; */
     /* margin-bottom: 40px; */
     /* border-radius: 20px; */
-    width: 93%;
 }
 
 .logo {
@@ -52,7 +54,7 @@ a{
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: #7590b9;
+    background-color: #51b60b85;
     font-family: system-ui;
 }
 
@@ -75,7 +77,7 @@ a{
     margin: 0 auto;
 }
 
-.mus {
+.music-content {
     background-color: #51b60b85;
     color: #ffff;
     padding: 0px;
@@ -102,7 +104,7 @@ a{
     margin: 50px auto;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #fbfafa;
+    background-color: #51b60b85;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: system-ui;
@@ -113,6 +115,9 @@ img{
     width: 100%;
     height: 100%;
     border-radius: 30px;
+}
+.no-border-radius {
+    border-radius: 0;
 }
 
 iframe {
@@ -132,12 +137,20 @@ iframe {
     width: 100%; /* Adjust the width based on your layout preference */
     margin-bottom: 20px;
     box-sizing: border-box;
+    font-family: system-ui;
     padding: 15px;
-    border-radius: 25px;
+}
+.header {
+    width: 100%; /* Adjust the width based on your layout preference */
+    margin-bottom: 20px;
+    box-sizing: border-box;
     font-family: system-ui;
 }
-#Mu .a:-webkit-any-link{
+#header .img{
+    width: 362%;
+    height: 100%;
     color: rgb(74, 74, 74);
+    border-radius: 0%;
 }
 
 .Muuu {
@@ -172,13 +185,13 @@ h1 {
 }
 /* Basic styling for the search input */
 .search {
-    width: 200px;
     padding: 10px;
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     font-family: system-ui;
+    margin-left: -12px;
     
 }
 .btn-primary {
@@ -293,7 +306,7 @@ tr:last-child td {
     color: #aae87d85;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 13px;
     font-weight: bold;
 }
 .toggler {
@@ -366,8 +379,8 @@ nav ul li a:hover {
     clear: both;
 }
 .showcase-area{
-    height: 56vh;
-    background: url(../thumbnails/wal.webp);
+    height: 15vh;
+    /* background: url(../thumbnails/wal.webp); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -975,8 +988,20 @@ footer {
         width: 48%; /* Adjust the width based on your layout preference */
         
     }
+    #Muu .img{
+        width: 100%;
+        height: 100%;
+        color: rgb(74, 74, 74);
+    }
     .menu-icon {
         display: none;
+    }
+    .showcase-area{
+        height: 56vh;
+        /* background: url(../thumbnails/wal.webp); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .menu {
@@ -1012,6 +1037,13 @@ footer {
     flex-direction: row;
     background-color: #fdfdfd;
     }
+    .logo {
+        color: #aae87d85;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
 
 /* Responsive styles for PCs */
@@ -1022,7 +1054,7 @@ footer {
         margin: 50px auto;
         padding: 20px;
         box-sizing: border-box;
-        background-color: #fdfdfd;
+        background-color: #51b60b85;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         font-family: system-ui;
@@ -1042,6 +1074,18 @@ footer {
         font-size: 16px;
         
         
+    }
+    .header {
+        width: 100%; /* Adjust the width based on your layout preference */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        font-family: system-ui;
+    }
+    #header .img{
+        width: 100%;
+        height: 100%;
+        color: rgb(74, 74, 74);
+        border-radius: 1%;
     }
 
     .music-section {
@@ -1069,7 +1113,7 @@ footer {
     .Muu {
         grid-template-columns: repeat(1, 3fr);
     }
-    .mus {
+    .music-content {
         background-color: #51b60b85;
         color: #ffff;
         padding: 0px;
@@ -1081,12 +1125,16 @@ footer {
         text-align: -webkit-center;
     }
     .showcase-area{
-        background: url(../thumbnails/wal.webp);
+        /* background: url(../thumbnails/wal.webp); */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 60%;
+        
    }
+   #showcase-area .img{
+    width: 100%;
+    height: 100%;
+}
     .showcase-container {
         display: flex;
         flex-direction: column;
@@ -1109,5 +1157,12 @@ footer {
 iframe {
     width: 500px;
     height: 350px;
+}
+footer {
+    background-color: #000000f0;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    
 }
 }

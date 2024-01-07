@@ -33,42 +33,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5311e559-394d-4e8d-94f2-b9da28794560 # Album
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: bdbeb34c-295a-4b38-90db-3a7cbe6d58cb
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 333e84b6-3acc-4085-9523-8d4201b1e272 # Artist
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 896b96ca-ea20-48b5-8cdb-f2c9815edb41
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 2c7b97f9-025f-4d92-bc09-12e676d46ee6 # New
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 467b30ab-426c-442e-9661-500e47c3d4af
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 11031fd5-cbc8-43b5-9bc7-8b399a1b6c8c # duration
             instructions: null
             label: null
@@ -76,6 +40,30 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: dc205f82-5e53-4bae-b719-de4012e14ae6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 08bf68a4-3ed6-460a-86ef-d2eaf97bfefc # Artist
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f8aa537-d9e7-49e8-b4d7-c640827ce7f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dc5fa12b-4a76-44a9-a383-6422d369ef44 # Album
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf3f8298-a00f-4f76-a8e8-5ba8f1ea4e7c
             userCondition: null
             warning: null
             width: 100
