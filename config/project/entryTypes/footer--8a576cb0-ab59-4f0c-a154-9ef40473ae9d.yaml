@@ -118,9 +118,9 @@ fieldLayouts:
         name: Content
         uid: bfe5024b-d450-4d41-bde0-f67ebf182688
         userCondition: null
-handle: default
+handle: footer
 hasTitleField: true
-name: Default
+name: Footer
 section: 8dbaac6d-9024-4ed9-bf34-586b702b75b1 # Footer
 showStatusField: true
 slugTranslationKeyFormat: null

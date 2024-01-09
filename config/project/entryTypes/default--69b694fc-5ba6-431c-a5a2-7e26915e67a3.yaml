@@ -57,13 +57,25 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 461c2288-72cc-4f7a-bac4-dc96a43ce01f # Song
+            fieldUid: 461c2288-72cc-4f7a-bac4-dc96a43ce01f # song
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 53465aeb-0aa4-49e0-9d9c-0b60995f43c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 08bf68a4-3ed6-460a-86ef-d2eaf97bfefc # Artist
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7666c6bc-616c-4c35-ab15-7697ed2eccc0
             userCondition: null
             warning: null
             width: 100

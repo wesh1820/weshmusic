@@ -19,7 +19,7 @@ return [
                         $song[] = [
                             'id' => $songEntry->id,
                             'title' => $songEntry->title,
-                            'duration' => $entry->duration,
+                            'duration' => $songEntry->duration,
                         ];
                     }
 
@@ -35,6 +35,7 @@ return [
                         'id' => $entry->id,
                         'title' => $entry->title,
                         'song' => $song,
+                        
                         'release' => $entry->release,
                         'artist' => $artist,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
@@ -81,12 +82,20 @@ return [
                 'transformer' => function (Entry $entry) {
                     $song = [];
                     $songEntries = $entry->song->all();
+                    $artist = [];
 
                     foreach ($songEntries as $songEntry) {
                         $song[] = [
                             'id' => $songEntry->id,
                             'title' => $songEntry->title,
                             'duration' => $songEntry->duration,
+                        ];
+                    }
+                    $albumEntries = $entry->album->all();
+                    foreach ($albumEntries as $albumEntry) {
+                        $album[] = [
+                            'id' => $albumEntry->id,
+                            'title' => $albumEntry->title,
                         ];
                     }
 
@@ -96,6 +105,7 @@ return [
                         'nationality' => $entry->nationality,
                         'bannerImage' => str_replace("https", "http", $entry->bannerImage->one()->getUrl('bannerImage')),
                         'song' => $song,
+                        'album' => $album,
                     ];
                 },
             ];
@@ -141,7 +151,7 @@ return [
                         $song[] = [
                             'id' => $songEntry->id,
                             'title' => $songEntry->title,
-                            'duration' => $entry->duration,
+                            'duration' => $songEntry->duration,
                         ];
                     }
                     $artist = [];

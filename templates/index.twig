@@ -54,7 +54,7 @@
                  {% endfor %}
                 </div>
                 <section class="music-home">
-                    {% set entries = craft.entries().section('artist').limit(3) %}
+                    {% set entries = craft.entries().section('album').limit(3) %}
                     {% for entry in entries %} 
                         <article class="Muuu">
                             <div>
@@ -78,7 +78,7 @@
                  {% endfor %}
                 </div>
                 <section class="music-home">
-                    {% set entries = craft.entries().section('album').limit(3) %}
+                    {% set entries = craft.entries().section('artist').limit(3) %}
                     {% for entry in entries %} 
                         <article class="Muu">
                             <div>

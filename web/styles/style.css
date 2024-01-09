@@ -14,7 +14,7 @@ a{
     font-family: system-ui;
 }
 a:visited {
-    color: #3e771585;
+    color: #678751;
 }
 .navbar {
     background-color: #000000f0;
@@ -1010,8 +1010,7 @@ footer {
         top: 0;
         flex-direction: row;
         background-color: transparent;
-        
-        width: 40%;
+        width: 22%;
     }
 
     .menu a {
@@ -1043,6 +1042,7 @@ footer {
         text-decoration: none;
         font-size: 30px;
         font-weight: bold;
+        margin-left: 2%;
     }
 }
 
@@ -1066,7 +1066,7 @@ footer {
         height: 300px; /* You can adjust the height based on your preference */
     }
     .search {
-        width: 200px;
+        width: 250%;
         padding: 10px;
         margin: 5px;
         border: 1px solid #ccc;
@@ -1164,5 +1164,8 @@ footer {
     padding: 30px;
     text-align: center;
     
+}
+.search-container {
+    margin-right: 23%;
 }
 }

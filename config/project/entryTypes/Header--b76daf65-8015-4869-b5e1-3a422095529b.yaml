@@ -178,9 +178,9 @@ fieldLayouts:
         name: Content
         uid: f643a75e-3e6d-449e-9b78-660bcb92730a
         userCondition: null
-handle: default
+handle: Header
 hasTitleField: true
-name: Default
+name: header
 section: 859afa3a-21e6-4164-a8f1-1613daef7226 # header
 showStatusField: true
 slugTranslationKeyFormat: null

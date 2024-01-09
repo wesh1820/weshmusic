@@ -33,30 +33,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 5311e559-394d-4e8d-94f2-b9da28794560
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 252761b8-f07e-41c1-a77e-7c479a95bca3
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 79353fa9-884d-4ed5-9f3b-6a87701ccee8
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b43d6435-ddae-448f-8f50-ca74cce6bcec
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 91ae1e85-45cd-4003-90bf-450ed64b47ba # Dialog
             instructions: null
             label: null
@@ -64,6 +40,30 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 3cc795d8-3374-4e4d-80ce-b985f26a1313
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 461c2288-72cc-4f7a-bac4-dc96a43ce01f # song
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be69ce60-498d-4535-a598-b182209ca6ba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dc5fa12b-4a76-44a9-a383-6422d369ef44 # Album
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 466be6bd-8e33-4e59-a3ea-ff81dcab8155
             userCondition: null
             warning: null
             width: 100

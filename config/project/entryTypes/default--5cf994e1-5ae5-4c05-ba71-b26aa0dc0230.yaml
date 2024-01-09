@@ -45,7 +45,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 461c2288-72cc-4f7a-bac4-dc96a43ce01f # Song
+            fieldUid: 461c2288-72cc-4f7a-bac4-dc96a43ce01f # song
             instructions: null
             label: null
             required: false
