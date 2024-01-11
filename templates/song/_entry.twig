@@ -1,37 +1,42 @@
-{% extends "_layout" %}
+{% extends "_layout2" %}
 
 {% block content %}
     <section class="article-details">
-            <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-        <h2> {{ entry.title }}</h2>
+        <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+        <h2>{{ entry.title }}</h2>
         <p>Duration: {{ entry.duration }}</p>
         <p>Genre: {{ entry.genre }}</p>
-        
-        {% set albums = craft.entries.section('album').relatedTo(entry).limit(3) %}
-        
-        {% for albumEntry in albums %} 
-         <h1>Albums</h1>
-         <p>{{ albumEntry.title }}</p>
-            
-            {# Execute the songs query to get the actual results #}
-            
-        {% endfor %}
 
+        {# Albums gerelateerd aan het huidige artikel #}
+        {% set albums = craft.entries.section('album').relatedTo(entry).limit(3) %}
+
+        {% if albums|length > 0 %}
+            <h1>Albums</h1>
+            {% for albumEntry in albums %}
+                <p>{{ albumEntry.title }}</p>
+                {# Voer hier de query voor nummers uit om de feitelijke resultaten te krijgen #}
+            {% endfor %}
+        {% endif %}
+
+        {# Artiesten gerelateerd aan het huidige artikel #}
         {% set artists = craft.entries.section('artist').relatedTo(entry).limit(3) %}
 
-        {% for artistEntry in artists %} 
-         <h1>Artists</h1>
-            <p> {{ artistEntry.title }}</p>
-            
-            {# Execute the songs query to get the actual results #}
-            
-        {% endfor %}
+        {% if artists|length > 0 %}
+            <h1>Artists</h1>
+            {% for artistEntry in artists %}
+                <p>{{ artistEntry.title }}</p>
+                {# Voer hier de query voor nummers uit om de feitelijke resultaten te krijgen #}
+            {% endfor %}
+        {% endif %}
 
+        {# Als er een videoclip is, toon deze #}
         {% if entry.videoclip %}
-            {# Assuming entry.videoclip contains a YouTube URL #}
+            <h1>Videoclip</h1>
+            {# Aannemende dat entry.videoclip een YouTube URL bevat #}
             <iframe src="{{ entry.videoclip }}" frameborder="0" allowfullscreen></iframe>
         {% endif %}
-        
+
+        <h1>Lyrics</h1>
         <p>{{ entry.lyrics }}</p>
     </section>
 {% endblock %}

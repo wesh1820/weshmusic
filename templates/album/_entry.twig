@@ -1,18 +1,20 @@
-{% extends "_layout" %}
+{% extends "_layout2" %}
 
 {% block content %}
     <section class="article-details">
-    <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+        <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
         <h2>{{ entry.title }}</h2>
+
+        <h1>Release</h1>
         <p>{{ entry.release }}</p>
-            {% set songs = craft.entries.section('song').relatedTo(entry).limit(3) %}
+
+        {# Songs gerelateerd aan het huidige artikel, beperkt tot 3 #}
+        {% set songs = craft.entries.section('song').relatedTo(entry).limit(3) %}
+
         <h1>Songs</h1>
-        {% for songsEntry in songs %} 
-            <p>{{ songsEntry.title }}</p>
-            
-            
-            {# Execute the songs query to get the actual results #}
-            
+        {% for songsEntry in songs %}
+            <p>-{{ songsEntry.title }}</p>
+            {# Voer hier de query voor nummers uit om de feitelijke resultaten te krijgen #}
         {% endfor %}
     </section>
 {% endblock %}

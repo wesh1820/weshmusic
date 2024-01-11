@@ -12,12 +12,13 @@ body {
 a{
     text-decoration: none;
     font-family: system-ui;
+    color: green;
 }
 a:visited {
     color: #678751;
 }
 .navbar {
-    background-color: #000000f0;
+    background-color: #1a1a1af0;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -51,10 +52,10 @@ a:visited {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 58px;
     left: 0;
     width: 100%;
-    background-color: #51b60b85;
+    background-color: #1a1a1af0;
     font-family: system-ui;
 }
 
@@ -78,12 +79,12 @@ a:visited {
 }
 
 .music-content {
-    background-color: #51b60b85;
+    background-color: #285d04e3;
     color: #ffff;
     padding: 0px;
     text-align: center;
     font-family: system-ui;
-    border-radius: 20px;
+    border-radius: 8px;
     /* width: 48%; */
     /* height: 32px; */
     text-align: -webkit-center;
@@ -132,6 +133,7 @@ iframe {
     padding: 15px;
     border-radius: 25px;
     font-family: system-ui;
+    text-align: center;
 }
 .Muu {
     width: 100%; /* Adjust the width based on your layout preference */
@@ -146,11 +148,11 @@ iframe {
     box-sizing: border-box;
     font-family: system-ui;
 }
-#header .img{
-    width: 362%;
-    height: 100%;
-    color: rgb(74, 74, 74);
-    border-radius: 0%;
+.header .img {
+    width: 200%;
+    height: auto; /* Keep the aspect ratio of the image */
+    border-radius: 0;
+    object-fit: cover; /* Ensure the image covers the container */
 }
 
 .Muuu {
@@ -160,7 +162,7 @@ iframe {
     padding: 15px;
     border-radius: 25px;
     font-family: system-ui;
-    color: white;
+    color: #050505;
 }
 
 
@@ -212,7 +214,7 @@ h1 {
 
 
 .download-now {
-    background: #51b60b85;
+    background: #285d04e3;
     padding: 50px 20px;
     text-align: center;
 }
@@ -266,7 +268,7 @@ tr:last-child td {
     border-bottom: none;
 }
 .btn-apple {
-    background-color: #000;
+    background-color: #1a1a1af0;
 }
 .btn-google {
     background-color: #4285f4;
@@ -276,9 +278,9 @@ tr:last-child td {
     font-size: 1.5rem;
 }
 .btn-apple {
-    background-color: #000;
+    background-color: #1a1a1af0;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -287,7 +289,7 @@ tr:last-child td {
     background-color: #fff;
     border: 1px solid #ccc;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
     margin-top: 1rem;
@@ -378,13 +380,6 @@ nav ul li a:hover {
 .clearfix {
     clear: both;
 }
-.showcase-area{
-    height: 15vh;
-    /* background: url(../thumbnails/wal.webp); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .showcase-container {
     display: flex;
     flex-direction: column;
@@ -399,7 +394,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 #about{
-    padding: 50px 0px;
+    padding: 0px 0px;
     background-color: #fdfdfd;
 }
 .about-wrapper{
@@ -452,7 +447,7 @@ nav ul li a:hover {
     object-position: right;
 }
 #about2{
-    padding: 50px 0px;
+    padding: 0px 0px;
     background: #51b60b85;
 }
 .about-wrapper{
@@ -829,7 +824,7 @@ padding: 0 0 25px;
 }
 .container {
 margin: 0 auto;
-padding: 50px 0 0;
+padding: 0px 0 0;
 max-width: 960px;
 width: 100%;
 }
@@ -976,7 +971,7 @@ background-color: #1e304d;
 margin-bottom: 20px;
 }
 footer {
-    background-color: #000000f0;
+    background-color: #1a1a1af0;
     color: #fff;
     padding: 30px;
     text-align: center;
@@ -995,13 +990,6 @@ footer {
     }
     .menu-icon {
         display: none;
-    }
-    .showcase-area{
-        height: 56vh;
-        /* background: url(../thumbnails/wal.webp); */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
     .menu {
@@ -1028,13 +1016,12 @@ footer {
     }
     .music-section {
         display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-family: system-ui;
-    align-content: space-around;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background-color: #fdfdfd;
+        justify-content: center;
+        padding: 20px;
+        font-family: system-ui;
+        align-items: center; /* Align items vertically at the center */
+        flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+        flex-direction: row; /* Default direction is row (horizontal) */
     }
     .logo {
         color: #aae87d85;
@@ -1043,6 +1030,23 @@ footer {
         font-size: 30px;
         font-weight: bold;
         margin-left: 2%;
+    }
+    .menu {
+        display: flex;
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        background-color: transparent;
+        width: 47%;
+    }
+    .music-home {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-family: system-ui;
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        flex-direction: row;
     }
 }
 
@@ -1054,7 +1058,7 @@ footer {
         margin: 50px auto;
         padding: 20px;
         box-sizing: border-box;
-        background-color: #51b60b85;
+        background-color: #51b60b59;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         font-family: system-ui;
@@ -1066,7 +1070,7 @@ footer {
         height: 300px; /* You can adjust the height based on your preference */
     }
     .search {
-        width: 250%;
+        width: 150%;
         padding: 10px;
         margin: 5px;
         border: 1px solid #ccc;
@@ -1088,15 +1092,6 @@ footer {
         border-radius: 1%;
     }
 
-    .music-section {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        font-family: system-ui;
-        align-items: center; /* Align items vertically at the center */
-        flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
-        flex-direction: row; /* Default direction is row (horizontal) */
-    }
     .music-home {
         display: flex;
         justify-content: center;
@@ -1114,27 +1109,17 @@ footer {
         grid-template-columns: repeat(1, 3fr);
     }
     .music-content {
-        background-color: #51b60b85;
         color: #ffff;
+        background-color: #285d04e3;
         padding: 0px;
         text-align: center;
         font-family: system-ui;
-        border-radius: 20px;
+        border-radius: 8px;
         /* width: 48%; */
         /* height: 32px; */
         text-align: -webkit-center;
     }
-    .showcase-area{
-        /* background: url(../thumbnails/wal.webp); */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-   }
-   #showcase-area .img{
-    width: 100%;
-    height: 100%;
-}
+
     .showcase-container {
         display: flex;
         flex-direction: column;
@@ -1144,8 +1129,16 @@ footer {
         font-size: 1.6rem;
         margin-left: 50%;
    }
+   .menu {
+    display: flex;
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    background-color: transparent;
+    width: 30%;
+}
    .navbar {
-    background-color: #000000f0;
+    background-color: #1a1a1af0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1159,7 +1152,7 @@ iframe {
     height: 350px;
 }
 footer {
-    background-color: #000000f0;
+    background-color: #1a1a1af0;
     color: #fff;
     padding: 30px;
     text-align: center;

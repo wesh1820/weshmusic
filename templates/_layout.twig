@@ -45,8 +45,7 @@
 <p> <a href="{{ entry.cat1Url }}">{{ entry.cat1}}</a></p>
 <p> <a href="{{ entry.cat2Url }}">{{ entry.cat2 }}</a></p>
 <p> <a href="{{ entry.cat3Url }}">{{ entry.cat3 }}</a></p>
-
-<p class="small">{{ entry.footertext }}</p>
+<p>{{ entry.footertext }}</p>
         {% endfor %}
     </footer>
 
@@ -55,6 +54,25 @@
             const menu = document.querySelector('.menu');
             menu.classList.toggle('show');
         }
+    </script>
+        <script>
+        let searchInput = document.querySelector(".search");
+        let musicTitles = document.querySelectorAll(".music-section article h2 a");
+
+        searchInput.addEventListener("input", function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+
+            musicTitles.forEach(titleLink => {
+                const musicTitle = titleLink.textContent.toLowerCase();
+                const musicArticle = titleLink.closest('article');
+
+                if (musicTitle.includes(searchTerm)) {
+                    musicArticle.style.display = "block"; // Show the matching music
+                } else {
+                    musicArticle.style.display = "none"; // Hide non-matching musics
+                }
+            });
+        });
     </script>
 </body>
 </html>

@@ -1,15 +1,21 @@
-{% extends "_layout" %}
+{% extends "_layout2" %}
 
 {% block content %}
     <section class="article-details">
         <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
         <h2>{{ entry.title }}</h2>
+        
+        {# Songs gerelateerd aan het huidige artikel #}
         {% set songs = craft.entries.section('song').relatedTo(entry).limit(40) %}
         
         <h1>Songs</h1>
         
-        {% for key, songsEntry in songs %}
-            <p>{{ key + 1 }}. {{ songsEntry.title }}</p>
-        {% endfor %}
+        {% if songs|length > 0 %}
+            {% for key, songsEntry in songs %}
+                <p>{{ key + 1 }}. {{ songsEntry.title }}</p>
+            {% endfor %}
+        {% else %}
+            <p>Geen songs gevonden.</p>
+        {% endif %}
     </section>
 {% endblock %}

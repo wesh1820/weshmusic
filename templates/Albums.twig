@@ -1,44 +1,24 @@
 {% extends "_layout" %}
 
 {% block content %}
+    {# Toon entries voor de 'Home'-sectie met een limiet van 80 #}
     <section class="music-content">
-            {% set entries = craft.entries().section('Home').limit(80) %}
-        
-        {% for entry in entries %}
-       <h2>{{ entry.cat2 }}
-                {% endfor %}
+        {% set homeEntries = craft.entries().section('Home').limit(80) %}
+        {% for entry in homeEntries %}
+            <h2>{{ entry.cat2 }}</h2>
+        {% endfor %}
     </section>
+
+    {# Toon entries voor de 'album'-sectie met een limiet van 80 #}
     <section class="music-section">
-        {% set entries = craft.entries().section('album').limit(80) %}
-        
-        {% for entry in entries %}
+        {% set albumEntries = craft.entries().section('album').limit(80) %}
+        {% for entry in albumEntries %}
             <article class="Mu">
                 <div>
                     <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                    <h2><a>{{ entry.title }}</a></h2>
-                    <a href="{{ entry.url }}">Explore</a>
+                    <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
                 </div>
             </article>
         {% endfor %}
     </section>
-
-    <script>
-        let searchInput = document.querySelector(".search");
-        let albumTitles = document.querySelectorAll(".music-section h2 a");
-
-        searchInput.addEventListener("input", function (e) {
-            const searchTerm = e.target.value.toLowerCase();
-
-            albumTitles.forEach(titleLink => {
-                const albumTitle = titleLink.textContent.toLowerCase();
-                const albumArticle = titleLink.closest('article');
-
-                if (albumTitle.includes(searchTerm)) {
-                    albumArticle.style.display = "block"; // Show the matching album
-                } else {
-                    albumArticle.style.display = "none"; // Hide non-matching albums
-                }
-            });
-        });
-    </script>
 {% endblock %}

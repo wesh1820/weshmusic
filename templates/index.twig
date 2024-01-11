@@ -1,132 +1,132 @@
 {% extends "_layout2.twig" %}
 
 {% block content %}
-    {% set entries = craft.entries().section('header') %}
-    {% for entry in entries %} 
-<section class="showcase-area" id="showcase">
+    {# Ophalen van entries voor de 'header'-sectie #}
+    {% set headerEntries = craft.entries().section('header') %}
 
-        <article class="header">
+    {# Doorloop de header entries en toon de showcase sectie #}
+    {% for entry in headerEntries %}
+        <section class="showcase-area" id="showcase">
             <div>
                 <img src="{{ entry.headerimage.one().url('headerimage') }}" alt="{{ entry.title }}" class="no-border-radius">
             </div>
-        </article>
-</section>
-
-    
-    <section class="download-now">
-        <h1>{{ entry.slogan }}</h1>
-        <div class="buttons">
-            <a href="" class="btn btn-apple"><i class="fab fa-apple"></i> App Store</a>
-            <a href="" class="btn btn-google"><i class="fab fa-google-play"></i> Google Play</a>
-        </div>
-    </section>
+        </section>
     {% endfor %}
-    <section id="about">
-        <div class="about-wrapper container">
-            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
-                    {% for entry in entries %} 
-                <p class="small">{{ entry.cat1 }}</p>
-                <h2>{{ entry.cat1description }}
-                 {% endfor %}
-                </div>
-                <section class="music-home">
-                    {% set entries = craft.entries().section('song').limit(3) %}
-                    {% for entry in entries %} 
-                        <article class="Muu">
-                            <div>
-                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                                <h3><a>{{ entry.title }}</a></h3>
-                                <a href="{{ entry.url }}">read more</a>
-                            </div>
-                        </article>
-                    {% endfor %}
-                </section>
-            </div>
-        </div>
-    </section>
 
+    {# Over ons Sectie 1 #}
     <section id="about2">
         <div class="about-wrapper container">
-            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
-                    {% for entry in entries %} 
-                <p class="small">{{ entry.cat2 }}</p>
-                <h2>{{ entry.cat2description }}
-                 {% endfor %}
-                </div>
-                <section class="music-home">
-                    {% set entries = craft.entries().section('album').limit(3) %}
-                    {% for entry in entries %} 
-                        <article class="Muuu">
-                            <div>
-                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                                <h3><a>{{ entry.title }}</a></h3>
-                                <a href="{{ entry.url }}">read more</a>
-                            </div> 
-                        </article>
-                    {% endfor %}
-                </section>
+            <div class="about-text">
+                {# Ophalen van entries voor de 'Home'-sectie met een limiet van 3 #}
+                {% set homeEntries = craft.entries().section('Home').limit(3) %}
+                {# Doorloop de home entries en toon categorie 1 informatie #}
+                {% for entry in homeEntries %}
+                    <p class="small">{{ entry.cat1 }}</p>
+                    <h2>{{ entry.cat1description }}</h2>
+                {% endfor %}
             </div>
+
+            {# Toon muziek entries gerelateerd aan de 'song'-sectie #}
+            <section class="music-home">
+                {% set songEntries = craft.entries().section('song').limit(3) %}
+                {% for entry in songEntries %}
+                    <article class="Muu">
+                        <div>
+                            <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                            <h3>{{ entry.title }}</h3>
+                            <a href="{{ entry.url }}">Meer</a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </section>
         </div>
     </section>
 
+    {# Over ons Sectie 2 #}
     <section id="about">
         <div class="about-wrapper container">
-            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
-                    {% for entry in entries %} 
-                <p class="small">{{ entry.cat3 }}</p>
-                <h2>{{ entry.cat3description }}
-                 {% endfor %}
-                </div>
-                <section class="music-home">
-                    {% set entries = craft.entries().section('artist').limit(3) %}
-                    {% for entry in entries %} 
-                        <article class="Muu">
-                            <div>
-                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                                <h3><a>{{ entry.title }}</a></h3>
-                                <a href="{{ entry.url }}">read more</a>
-                            </div>
-                        </article>
-                    {% endfor %}
-                </section>
+            <div class="about-text">
+                {# Ophalen van entries voor de 'Home'-sectie met een limiet van 3 #}
+                {% set homeEntries = craft.entries().section('Home').limit(3) %}
+                {# Doorloop de home entries en toon categorie 2 informatie #}
+                {% for entry in homeEntries %}
+                    <p class="small">{{ entry.cat2 }}</p>
+                    <h2>{{ entry.cat2description }}</h2>
+                {% endfor %}
             </div>
-        </div>
-    </section>
-      
-    <section id="about2">
-        <div class="about-wrapper container">
-            <div class="about-text">  {% set entries = craft.entries().section('Home').limit(3) %}
-                    {% for entry in entries %} 
-                <p class="small">{{ entry.cat4 }}</p>
-                <h2>{{ entry.cat4description }}
-                 {% endfor %}
-                </div>
-                <section class="music-home">
-                    {% set entries = craft.entries().section('new').limit(3) %}
-                    {% for entry in entries %} 
-                        <article class="Muu">
-                            <div>
-                                <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
-                                <h3><a>{{ entry.title }}</a></h3>
-                                <a href="{{ entry.url }}">read more</a>
-                            </div>
-                        </article>
-                    {% endfor %}
-                </section>
-            </div>
+
+            {# Toon muziek entries gerelateerd aan de 'album'-sectie #}
+            <section class="music-home">
+                {% set albumEntries = craft.entries().section('album').limit(3) %}
+                {% for entry in albumEntries %}
+                    <article class="Muuu">
+                        <div>
+                            <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                            <h3>{{ entry.title }}</h3>
+                            <a href="{{ entry.url }}">Meer</a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </section>
         </div>
     </section>
 
-    <section>
-        {% set tweets = craft.tweetfeed.tweets(3, 'author_id,context_annotations', '&exclude=retweets,replies&user.fields=id') %}
-        
-        {% for tweet in tweets %}
-            <div>
-                <h3>{{ tweet.text }}</h3>
+    {# Over ons Sectie 3 #}
+    <section id="about2">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                {# Ophalen van entries voor de 'Home'-sectie met een limiet van 3 #}
+                {% set homeEntries = craft.entries().section('Home').limit(3) %}
+                {# Doorloop de home entries en toon categorie 3 informatie #}
+                {% for entry in homeEntries %}
+                    <p class="small">{{ entry.cat3 }}</p>
+                    <h2>{{ entry.cat3description }}</h2>
+                {% endfor %}
             </div>
-        {% endfor %}
+
+            {# Toon muziek entries gerelateerd aan de 'artist'-sectie #}
+            <section class="music-home">
+                {% set artistEntries = craft.entries().section('artist').limit(3) %}
+                {% for entry in artistEntries %}
+                    <article class="Muu">
+                        <div>
+                            <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                            <h3>{{ entry.title }}</h3>
+                            <a href="{{ entry.url }}">Meer</a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </section>
+        </div>
     </section>
-      
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
+
+    {# Over ons Sectie 4 #}
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                {# Ophalen van entries voor de 'Home'-sectie met een limiet van 4 #}
+                {% set homeEntries = craft.entries().section('Home').limit(4) %}
+                {# Doorloop de home entries en toon categorie 4 informatie #}
+                {% for entry in homeEntries %}
+                    <p class="small">{{ entry.cat4 }}</p>
+                    <h2>{{ entry.cat4description }}</h2>
+                {% endfor %}
+            </div>
+
+            {# Toon muziek entries gerelateerd aan de 'new'-sectie #}
+            <section class="music-home">
+                {% set newEntries = craft.entries().section('new').limit(3) %}
+                {% for entry in newEntries %}
+                    <article class="Muu">
+                        <div>
+                            <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
+                            <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+                            <a href="{{ entry.url }}">Meer</a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </section>
+        </div>
+    </section>
+
 {% endblock %}
