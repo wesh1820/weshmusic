@@ -30,11 +30,11 @@
             <section class="music-home">
                 {% set songEntries = craft.entries().section('song').limit(3) %}
                 {% for entry in songEntries %}
-                    <article class="Muu">
+                    <article class="Music-article">
                         <div>
                             <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
                             <h3>{{ entry.title }}</h3>
-                            <a href="{{ entry.url }}">Meer</a>
+                            <a href="{{ entry.url }}" class="button">More</a>
                         </div>
                     </article>
                 {% endfor %}
@@ -59,11 +59,11 @@
             <section class="music-home">
                 {% set albumEntries = craft.entries().section('album').limit(3) %}
                 {% for entry in albumEntries %}
-                    <article class="Muuu">
+                    <article class="Music-article">
                         <div>
                             <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
                             <h3>{{ entry.title }}</h3>
-                            <a href="{{ entry.url }}">Meer</a>
+                            <a href="{{ entry.url }}" class="button">More</a>
                         </div>
                     </article>
                 {% endfor %}
@@ -88,11 +88,11 @@
             <section class="music-home">
                 {% set artistEntries = craft.entries().section('artist').limit(3) %}
                 {% for entry in artistEntries %}
-                    <article class="Muu">
+                    <article class="Music-article">
                         <div>
                             <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
                             <h3>{{ entry.title }}</h3>
-                            <a href="{{ entry.url }}">Meer</a>
+                            <a href="{{ entry.url }}" class="button">More</a>
                         </div>
                     </article>
                 {% endfor %}
@@ -117,11 +117,11 @@
             <section class="music-home">
                 {% set newEntries = craft.entries().section('new').limit(3) %}
                 {% for entry in newEntries %}
-                    <article class="Muu">
+                    <article class="Music-article">
                         <div>
                             <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
                             <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
-                            <a href="{{ entry.url }}">Meer</a>
+                             <a href="{{ entry.url }}" class="button">More</a>
                         </div>
                     </article>
                 {% endfor %}

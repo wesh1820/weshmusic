@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html lang="{{craft.app.language}}">
+<html lang="{{ craft.app.language }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{siteName}}</title>
+    <title>{{ siteName }}</title>
     {% do craft.app.view.registerCssFile('@web/styles/normalize.css') %}
     {% do craft.app.view.registerCssFile('@web/styles/style.css') %}
 </head>
 <body>
+
 <header>
-       {% set entries = craft.entries().section('header') %}
-                    {% for entry in entries %} 
-    <div class="navbar">
-        <div class="logo">
-            <a href="{{ entry.homeUrl }}">{{ entry.siteName }}</a>
+    {% set headerEntries = craft.entries.section('header') %}
+    {% for entry in headerEntries %}
+        <div class="navbar">
+            <div class="logo">
+                <a href="{{ entry.homeUrl }}">{{ entry.siteName }}</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <a href="{{ entry.homeUrl }}">{{ entry.homeLinkText }}</a>
+                <a href="{{ entry.cat1Url }}">{{ entry.cat1 }}</a>
+                <a href="{{ entry.cat2Url }}">{{ entry.cat2 }}</a>
+                <a href="{{ entry.cat3Url }}">{{ entry.cat3 }}</a>
+            </div>
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="menu">
-            <a href="{{ entry.homeUrl }}">{{ entry.homeLinkText }}</a>
-<a href="{{ entry.cat1Url }}">{{ entry.cat1 }}</a>
-<a href="{{ entry.cat2Url }}">{{ entry.cat2}}</a>
-<a href="{{ entry.cat3Url }}">{{ entry.cat3 }}</a>
-        </div>
-    </div>
     {% endfor %}
 </header>
 
-    {% block content %}
-    {# hier komt de content #}
-    {% endblock %}
+{% block content %}
+    {# Content goes here #}
+{% endblock %}
 
-    <footer>
-       {% set entries = craft.entries().section('Footer') %}
-                    {% for entry in entries %} 
-<p> <a href="{{ entry.cat1Url }}">{{ entry.cat1 }}</a></p>
-<p> <a href="{{ entry.cat2Url }}">{{ entry.cat2 }}</a></p>
-<p> <a href="{{ entry.cat3Url }}">{{ entry.cat3 }}</a></p>
-<p>{{ entry.footertext }}</p>
-        {% endfor %}
-    </footer>
+<footer>
+    {% set footerEntries = craft.entries.section('Footer') %}
+    {% for entry in footerEntries %}
+        <p><a href="{{ entry.cat1Url }}">{{ entry.cat1 }}</a></p>
+        <p><a href="{{ entry.cat2Url }}">{{ entry.cat2 }}</a></p>
+        <p><a href="{{ entry.cat3Url }}">{{ entry.cat3 }}</a></p>
+        <p>{{ entry.footertext }}</p>
+    {% endfor %}
+</footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            menu.classList.toggle('show');
-        }
-    </script>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('show');
+    }
+</script>
+
 </body>
 </html>

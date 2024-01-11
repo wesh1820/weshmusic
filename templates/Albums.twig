@@ -13,7 +13,7 @@
     <section class="music-section">
         {% set albumEntries = craft.entries().section('album').limit(80) %}
         {% for entry in albumEntries %}
-            <article class="Mu">
+            <article class="Music-feed">
                 <div>
                     <img src="{{ entry.bannerImage.one().url('bannerImage') }}" alt="{{ entry.title }}">
                     <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
